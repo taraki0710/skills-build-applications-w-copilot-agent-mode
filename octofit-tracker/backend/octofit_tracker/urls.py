@@ -27,6 +27,6 @@ router.register(r'leaderboards', views.LeaderboardViewSet, basename='leaderboard
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', views.api_root, name='api-root'),
-    path('', include(router.urls)),
+    path('api/', views.api_root, name='api-root'),
+    path('api/', include(router.urls)),
 ]
